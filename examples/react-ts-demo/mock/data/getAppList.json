@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "城市大屏",
+    "description": "城市大屏数据看板",
+    "spmid": "a123",
+    "createTime": "2023-05-09",
+    "updateTime": "2023-05-09"
+  },
+  {
+    "id": "2",
+    "name": "租车平台",
+    "description": "租车业务管理后台",
+    "spmid": "a456",
+    "createTime": "2023-05-09",
+    "updateTime": "2023-05-09"
+  },
+  {
+    "id": "3",
+    "name": "埋点管理",
+    "description": "埋点申请、埋点数据报表查看",
+    "spmid": "a789",
+    "createTime": "2023-05-09",
+    "updateTime": "2023-05-09"
+  }
+]

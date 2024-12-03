@@ -1,0 +1,32 @@
+{
+  "page": 1,
+  "totalItems": 20,
+  "rows": [
+    {
+      "id": 1,
+      "agentName": "杭州宇谷",
+      "crowdName": "mock 人群",
+      "crowdTagGroupObj": "mock 标签",
+      "predictNums": 100,
+      "predictTime": "2023-07-01",
+      "updateMode": "方式1",
+      "createBy": "宋军",
+      "gmtCreate": "2023-07-01",
+      "updateBy": "宋军",
+      "gmtModified": "2023-07-01"
+    },
+    {
+      "id": 2,
+      "agentName": "杭州宇谷",
+      "crowdName": "mock 人群",
+      "crowdTagGroupObj": "mock 标签",
+      "predictNums": 100,
+      "predictTime": "2023-07-01",
+      "updateMode": "方式1",
+      "createBy": "宋军",
+      "gmtCreate": "2023-07-01",
+      "updateBy": "宋军",
+      "gmtModified": "2023-07-01"
+    }
+  ]
+}
