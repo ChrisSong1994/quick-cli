@@ -1,4 +1,4 @@
-# @chrissong/quick-cli
+# @fett/quick-cli
 
 前端脚手架工具，基于 [rspack](https://github.com/web-infra-dev/rspack) 实现底层项目的构建能力和开发服务等；
 
@@ -17,7 +17,7 @@
 
 ```sh
 ## 全局安装
-npm i -g @chrissong/quick-cli
+npm i -g @fett/quick-cli
 
 ## 创建项目
 quick create vue-app

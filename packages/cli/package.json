@@ -1,10 +1,10 @@
 {
-  "name": "@chrissong/quick-cli",
-  "version": "0.0.1",
+  "name": "@fett/quick-cli",
+  "version": "0.0.5",
   "description": "脚手架命令行工具",
   "main": "./lib/index.js",
   "bin": {
-    "quick": "./bin/quick"
+    "quick": "bin/quick"
   },
   "files": [
     "lib",

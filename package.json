@@ -1,6 +1,5 @@
 {
   "name": "quick",
-  "version": "0.0.1",
   "description": "前端脚手架工具",
   "private": true,
   "scripts": {

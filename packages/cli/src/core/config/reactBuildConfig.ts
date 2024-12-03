@@ -24,7 +24,7 @@ const config: any = (customConfig: QucikConfig, cliOptions: CommonOptions) => {
       ...customConfig.module,
       parser: {
         'css/auto': {
-          namedExports: false,
+          namedExports: true,
         },
       },
       rules: [

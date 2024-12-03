@@ -107,12 +107,17 @@ export const module: QucikConfig['module'] = {
     {
       test: /\.less$/,
       loader: require.resolve('less-loader'),
-      type: 'css',
+      options: {
+        lessOptions: {
+          javascriptEnabled: true,
+        },
+      },
+      type: 'css/auto',
     },
     {
       test: /\.s[ac]ss$/,
       loader: require.resolve('sass-loader'),
-      type: 'css',
+      type: 'css/auto',
     },
     // 图片
     {
