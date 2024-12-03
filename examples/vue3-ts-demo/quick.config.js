@@ -28,7 +28,6 @@ module.exports = function () {
         directory: 'public',
       },
       port: 4001,
-      host: 'local.yusong.com.cn',
       open: true,
       historyApiFallback: true,
       headers: {
@@ -37,7 +36,7 @@ module.exports = function () {
       proxy: [
         {
           context: ['/web_console_api'],
-          target: 'https://cshd.yusong.com.cn',
+          target: 'https://xxxxxxx',
           changeOrigin: true,
         },
       ],

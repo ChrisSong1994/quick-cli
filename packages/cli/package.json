@@ -1,5 +1,5 @@
 {
-  "name": "quick-cli",
+  "name": "@chrissong/quick-cli",
   "version": "0.0.1",
   "description": "脚手架命令行工具",
   "main": "./lib/index.js",
