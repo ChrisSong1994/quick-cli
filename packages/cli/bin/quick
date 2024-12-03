@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+const { initNodeEnv, loadCli } = require('../lib/index');
+
+(async () => {
+  initNodeEnv();
+  loadCli();
+})();
