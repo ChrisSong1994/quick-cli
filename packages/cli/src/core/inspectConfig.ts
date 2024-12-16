@@ -5,10 +5,6 @@ import {
   createVue3BuildConfigWithProd,
 } from './config/vue3BuildConfig';
 import {
-  createVue2BuildConfigWithDev,
-  createVue2BuildConfigWithProd,
-} from './config/vue2BuildConfig';
-import {
   createReactBuildConfigWithDev,
   createReactBuildConfigWithProd,
 } from './config/reactBuildConfig';
@@ -29,13 +25,7 @@ export const inspectConfig = async (config: any, cliOptions: CommonOptions) => {
     }
   }
 
-  if (config.appType === EAppType.Vue2) {
-    if (cliOptions.mode === 'production') {
-      rspackConfig = createVue2BuildConfigWithProd(config, cliOptions);
-    } else {
-      rspackConfig = createVue2BuildConfigWithDev(config, cliOptions);
-    }
-  }
+
 
   if (config.appType === EAppType.React) {
     if (cliOptions.mode === 'production') {

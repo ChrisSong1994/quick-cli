@@ -52,13 +52,13 @@ const config: any = (customConfig: QucikConfig, cliOptions: CommonOptions) => {
           ],
           type: 'javascript/auto',
         },
-        // {
-        //   test: /\.svg$/,
-        //   loader: require.resolve('rspack-svg-loader/vue'),
-        //   options: {
-        //     svgoConfig: {},
-        //   },
-        // },
+        {
+          test: /\.svg$/,
+          loader: require.resolve('rspack-svg-loader/vue'),
+          options: {
+            svgoConfig: {},
+          },
+        },
       ],
     },
     plugins: [...(customConfig?.plugins || []), new VueLoaderPlugin()],

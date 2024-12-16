@@ -63,20 +63,7 @@ export const getTplParams = async () => {
     {
       name: 'vue3-admin',
       value: 'template-vue3-admin-ts',
-      repository:
-        'https://codeup.aliyun.com/62a3ee773e81781f3ad16b1e/front-end-engineering/vue-admin-template.git',
-    },
-    {
-      name: 'vue3-h5',
-      value: 'template-vue3-h5-ts',
-      repository:
-        'https://codeup.aliyun.com/62a3ee773e81781f3ad16b1e/front-end-engineering/vue-h5-template.git',
-    },
-    {
-      name: 'react-admin',
-      value: 'template-react-ts',
-      repository:
-        'https://codeup.aliyun.com/62a3ee773e81781f3ad16b1e/front-end-engineering/react-admin-template.git',
+      repository: '',
     },
   ];
 

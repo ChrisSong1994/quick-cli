@@ -55,6 +55,13 @@ const config: any = (customConfig: QucikConfig, cliOptions: CommonOptions) => {
             },
           ],
         },
+        {
+          test: /\.svg$/,
+          loader: require.resolve('rspack-svg-loader/react'),
+          options: {
+            svgoConfig: {},
+          },
+        },
       ],
     },
     plugins: [...(customConfig?.plugins || []), isDev ? new RefreshPlugin() : null].filter(Boolean),

@@ -3,7 +3,6 @@ import type * as Rspack from '@rspack/core';
 import chalk from 'chalk';
 
 import { createVue3BuildConfigWithProd } from './config/vue3BuildConfig';
-import { createVue2BuildConfigWithProd } from './config/vue2BuildConfig';
 import { createReactBuildConfigWithProd } from './config/reactBuildConfig';
 import { logger, formatStats } from '../utils';
 import { CommonOptions, EAppType } from '../types';
@@ -11,9 +10,7 @@ export const createBundler = async (config: any, cliOptions: CommonOptions) => {
   let configWithProd;
   if (config.appType === EAppType.Vue3) {
     configWithProd = createVue3BuildConfigWithProd(config, cliOptions);
-  } else if (config.appType === EAppType.Vue2) {
-    configWithProd = createVue2BuildConfigWithProd(config, cliOptions);
-  } else if (config.appType === EAppType.React) {
+  }  else if (config.appType === EAppType.React) {
     configWithProd = createReactBuildConfigWithProd(config, cliOptions);
   }
 

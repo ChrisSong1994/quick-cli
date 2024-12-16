@@ -127,14 +127,6 @@ export const module: QucikConfig['module'] = {
         filename: 'assets/[hash][ext]',
       },
     },
-    {
-      // resourceQuery: '/^(?!.*\bcomponent\b).*$/', // 针对 需要转成 component 情况
-      test: /\.(svg)(\?.*)?$/i,
-      type: 'asset',
-      generator: {
-        filename: 'assets/[hash][ext]',
-      },
-    },
     // 多媒体
     {
       test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,

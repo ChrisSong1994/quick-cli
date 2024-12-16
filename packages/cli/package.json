@@ -1,8 +1,10 @@
 {
   "name": "@fett/quick-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "脚手架命令行工具",
   "main": "./lib/index.js",
+  "author": "ChrisSong1994 <18557511748@163.com> (https://github.com/ChrisSong1994)",
+  "repository": "https://github.com/ChrisSong1994/quick-cli",
   "bin": {
     "quick": "bin/quick"
   },
@@ -14,8 +16,7 @@
     "dev": "tsc -b ./tsconfig.json --watch --sourceMap",
     "build": "tsc -b ./tsconfig.json"
   },
-  "author": "songjun",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-typescript": "^7.26.0",
@@ -24,7 +25,7 @@
     "@rspack/plugin-react-refresh": "^1.0.0",
     "@vue/babel-plugin-jsx": "^1.2.5",
     "@vue/babel-preset-jsx": "^1.4.0",
-    "rspack-svg-loader": "0.0.1",
+    "rspack-svg-loader": "latest",
     "address": "^2.0.3",
     "adm-zip": "^0.5.16",
     "babel-loader": "^9.2.1",
@@ -50,7 +51,6 @@
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "thread-loader": "^4.0.4",
-    "vue-loader15": "npm:vue-loader@15.11.1",
     "vue-loader17": "npm:vue-loader@17.4.2",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-dev-server": "5.0.4"
