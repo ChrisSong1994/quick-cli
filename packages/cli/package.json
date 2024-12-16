@@ -1,6 +1,6 @@
 {
   "name": "@fett/quick-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "脚手架命令行工具",
   "main": "./lib/index.js",
   "author": "ChrisSong1994 <18557511748@163.com> (https://github.com/ChrisSong1994)",

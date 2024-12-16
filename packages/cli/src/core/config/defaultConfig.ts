@@ -103,6 +103,11 @@ export const optimization: QucikConfig['optimization'] = {
 
 // module
 export const module: QucikConfig['module'] = {
+  parser: {
+    'css/auto': {
+      namedExports: false,
+    },
+  },
   rules: [
     {
       test: /\.less$/,
