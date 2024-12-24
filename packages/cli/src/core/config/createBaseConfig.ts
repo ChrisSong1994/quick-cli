@@ -6,9 +6,16 @@ import _ from 'lodash';
 import path from 'path';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-import { mockServer } from '../../utils';
+import { mockServer, logger } from '../../utils';
 import { defaultConfig, BrowserslistOption } from './defaultConfig';
-import { QucikConfig, EMode, CommonOptions, BundlerPluginInstance, EPlatform } from '../../types';
+import {
+  QucikConfig,
+  EMode,
+  CommonOptions,
+  BundlerPluginInstance,
+  EPlatform,
+  RspackConfig,
+} from '../../types';
 
 export const createBaseConfig: any = (customConfig: QucikConfig, cliOptions: CommonOptions) => {
   const { server, source } = defaultConfig;
@@ -29,7 +36,7 @@ export const createBaseConfig: any = (customConfig: QucikConfig, cliOptions: Com
   const define = _.merge(customConfig.source?.define, customConfig.source?.define);
   const devtool = output?.sourceMap;
 
-  const rspackConfig = {
+  let rspackConfig: any = {
     context: root,
     entry: entry,
     output: {
@@ -114,6 +121,13 @@ export const createBaseConfig: any = (customConfig: QucikConfig, cliOptions: Com
         openAnalyzer: true, // 不自动打开浏览器
       }),
     );
+  }
+
+  if (customConfig.bundlerConfig) {
+    const config = customConfig.bundlerConfig(rspackConfig);
+    if (config) {
+      rspackConfig = config;
+    }
   }
 
   return {

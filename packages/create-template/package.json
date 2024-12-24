@@ -1,0 +1,9 @@
+{
+  "name": "@fett/quick-create",
+  "version": "0.0.1",
+  "description": "创建模版",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
