@@ -41,5 +41,9 @@ module.exports = function () {
         },
       ],
     },
+    bundlerConfig: (config) => {
+     
+      console.log(config);
+    },
   };
 };

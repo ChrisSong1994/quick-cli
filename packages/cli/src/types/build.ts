@@ -30,4 +30,5 @@ export interface QucikConfig {
   optimization?: RspackConfig['optimization'];
   plugins?: RspackConfig['plugins'];
   module?: RspackConfig['module'];
+  bundlerConfig?: (config: RspackConfig) => RspackConfig;
 }
