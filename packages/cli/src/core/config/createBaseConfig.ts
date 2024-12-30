@@ -53,6 +53,7 @@ export const createBaseConfig: any = (customConfig: QucikConfig, cliOptions: Com
           warnings: false,
         },
       },
+      allowedHosts: customConfig.server?.allowedHosts || server?.allowedHosts,
       static: customConfig.server?.static || server?.static,
       port: customConfig.server?.port || server?.port,
       open: customConfig.server?.open || server?.open,

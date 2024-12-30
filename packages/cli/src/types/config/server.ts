@@ -28,4 +28,5 @@ export interface ServerConfig {
   proxy?: ProxyOptions; // 配置代理项
   headers?: Record<string, string>;
   static?: DevServer['static']; //用于配置是否从一些目录（默认为 'public'）启用静态服务器。
+  allowedHosts?: DevServer['allowedHosts'];
 }

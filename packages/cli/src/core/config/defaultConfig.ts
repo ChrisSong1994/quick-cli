@@ -51,7 +51,7 @@ export const output: QucikConfig['output'] = {
   filename: '[name].[hash:8].js',
   publicPath: 'auto',
   externals: {},
-  sourceMapFilename: '__yg-source-maps__/[file].map',
+  sourceMapFilename: '__source-maps__/[file].map',
 };
 
 // 开发服务器配置
@@ -62,6 +62,7 @@ export const server: QucikConfig['server'] = {
   host: '127.0.0.1',
   open: false,
   watchFiles: [],
+  allowedHosts: [],
   static: {
     directory: join(process.cwd(), 'public'), // public 作为静态服务文件夹
   },
