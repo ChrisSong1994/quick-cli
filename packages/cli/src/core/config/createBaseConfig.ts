@@ -165,6 +165,7 @@ export const createBaseConfigWithProd: any = (baseConfig: any) => {
     context: baseConfig.context,
     entry: baseConfig.entry,
     output: baseConfig.output,
+    externals: baseConfig.externals,
     devtool: baseConfig.devtool,
     resolve: baseConfig.resolve,
     module: baseConfig.module,

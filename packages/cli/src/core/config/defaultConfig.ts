@@ -62,7 +62,7 @@ export const server: QucikConfig['server'] = {
   host: '127.0.0.1',
   open: false,
   watchFiles: [],
-  allowedHosts: [],
+  allowedHosts: ['auto'],
   static: {
     directory: join(process.cwd(), 'public'), // public 作为静态服务文件夹
   },

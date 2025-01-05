@@ -35,7 +35,7 @@ export const formatStats = (statusJson: any) => {
     });
 
   function formatSize(size: number) {
-    return (size / 1024).toFixed(2) + ' KiB';
+    return (size / 1024).toFixed(2) + ' KB';
   }
 
   function makeRow(a: any, b: any, c?: any) {

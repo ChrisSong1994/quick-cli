@@ -19,6 +19,10 @@ module.exports = function () {
       sourceMap: 'cheap-source-map',
       filename: '[name].[hash:8].js',
       publicPath: 'auto',
+      externals: {
+        react: "React",
+        "react-dom": "ReactDOM",
+      },
     },
     // 开发配置
     server: {
